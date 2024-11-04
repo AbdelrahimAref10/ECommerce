@@ -35,11 +35,10 @@ namespace Application.Features.Products.Query.GetProductById
 
                 if (product is null)
                 {
-                    return Result.Failure<ProductByIdVm>("Product not found");
+                    return Result.Failure<ProductByIdVm>("The product not exists");
                 }
 
                 return Result.Success(product);
-
             }
         }
 
